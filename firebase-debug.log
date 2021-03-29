@@ -1,0 +1,185 @@
+[debug] [2021-03-29T09:23:23.552Z] ----------------------------------------------------------------------
+[debug] [2021-03-29T09:23:23.555Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\A\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2021-03-29T09:23:23.555Z] CLI Version:   9.7.0
+[debug] [2021-03-29T09:23:23.555Z] Platform:      win32
+[debug] [2021-03-29T09:23:23.555Z] Node Version:  v15.8.0
+[debug] [2021-03-29T09:23:23.556Z] Time:          Mon Mar 29 2021 14:53:23 GMT+0530 (India Standard Time)
+[debug] [2021-03-29T09:23:23.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-03-29T09:23:23.565Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-29T09:23:23.565Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions, firestore, database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, database, hosting"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project e-clone-21b4c. This may result in unexpected behavior. 
+[debug] [2021-03-29T09:23:23.614Z] [hub] writing locator at C:\Users\A\AppData\Local\Temp\hub-e-clone-21b4c.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, pubsub\u001b[22m"}}
+[warn] !  Your requested "node" version "12" doesn't match your global version "15" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"12\" doesn't match your global version \"15\""}}
+[debug] [2021-03-29T09:23:23.654Z] defaultcredentials: writing to file C:\Users\A\AppData\Roaming\firebase\shoebahemad28_gmail_com_application_default_credentials.json
+[debug] [2021-03-29T09:23:23.656Z] Setting GAC to C:\Users\A\AppData\Roaming\firebase\shoebahemad28_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\A\\AppData\\Roaming\\firebase\\shoebahemad28_gmail_com_application_default_credentials.json"}}
+[debug] [2021-03-29T09:23:23.659Z] > refreshing access token with scopes: []
+[debug] [2021-03-29T09:23:23.660Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-29T09:23:24.178Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 29 Mar 2021 09:23:23 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-29T09:23:24.197Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c/adminSdkConfig [none]
+[debug] [2021-03-29T09:23:25.239Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c/adminSdkConfig 200
+[debug] [2021-03-29T09:23:25.239Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c/adminSdkConfig {"projectId":"e-clone-21b4c","databaseURL":"https://e-clone-21b4c-default-rtdb.firebaseio.com","storageBucket":"e-clone-21b4c.appspot.com","locationId":"europe-west"}
+[warn] !  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2021-03-29T09:23:25.260Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-03-29T09:23:25.261Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-03-29T09:23:25.261Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\A\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.11.12.jar","--host","localhost","--port",8080,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\A\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.11.12.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2021-03-29T09:23:26.920Z] API endpoint: http://localhost: {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://localhost:"}}
+[debug] [2021-03-29T09:23:26.921Z] 8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8080\n\nDev App Server is now running.\n\r\n"}}
+[debug] [2021-03-29T09:23:27.038Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c [none]
+[debug] [2021-03-29T09:23:27.674Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c 200
+[debug] [2021-03-29T09:23:27.675Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c {"projectId":"e-clone-21b4c","projectNumber":"691046362256","displayName":"Amazone-clone","name":"projects/e-clone-21b4c","resources":{"hostingSite":"e-clone-21b4c","realtimeDatabaseInstance":"e-clone-21b4c-default-rtdb","storageBucket":"e-clone-21b4c.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2021-03-29T09:23:27.675Z] database rules config:  []
+[warn] !  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2021-03-29T09:23:27.678Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-03-29T09:23:27.678Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-03-29T09:23:27.678Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2021-03-29T09:23:27.678Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\A\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.7.2.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\A\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.7.2.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2021-03-29T09:23:29.690Z] 14:53:29.687 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"14:53:29.687 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\r\n"}}
+[debug] [2021-03-29T09:23:29.929Z] 14:53:29.930 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"14:53:29.930 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\r\n"}}
+[debug] [2021-03-29T09:23:30.210Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c/webApps/-/config [none]
+[debug] [2021-03-29T09:23:31.586Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c/webApps/-/config 200
+[debug] [2021-03-29T09:23:31.587Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c/webApps/-/config {"projectId":"e-clone-21b4c","appId":"1:691046362256:web:a90e66e9b5612535ed7c15","databaseURL":"https://e-clone-21b4c-default-rtdb.firebaseio.com","storageBucket":"e-clone-21b4c.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBgwN6HQi0fSygdLENHF8EVyYtlkPr702c","authDomain":"e-clone-21b4c.firebaseapp.com","messagingSenderId":"691046362256","measurementId":"G-L0FCKE87C2"}
+[info] i  hosting: Serving hosting files from: y {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1my\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2021-03-29T09:23:31.635Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-03-29T09:23:31.635Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-03-29T09:23:31.635Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\A\\.cache\\firebase\\emulators\\ui-v1.4.2\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\A\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.4.2\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-03-29T09:23:31.786Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[info] i  functions: Watching "D:\source\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\source\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2021-03-29T09:23:31.916Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-03-29T09:23:31.917Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-03-29T09:23:31.917Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-03-29T09:23:31.918Z] [worker-~diagnostic~-1f726c3e-195e-4496-ac3d-6d1512372461]: Assigning socketPath: \\?\pipe\D:\source\amazon-clone\functions\16748 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-1f726c3e-195e-4496-ac3d-6d1512372461]: Assigning socketPath: \\\\?\\pipe\\D:\\source\\amazon-clone\\functions\\16748"}}
+[debug] [2021-03-29T09:23:31.918Z] [worker-~diagnostic~-1f726c3e-195e-4496-ac3d-6d1512372461]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-1f726c3e-195e-4496-ac3d-6d1512372461]: BUSY"}}
+[debug] [2021-03-29T09:23:32.185Z] [runtime-status] [16748] Functions runtime initialized. {"cwd":"D:\\source\\amazon-clone\\functions","node_version":"15.8.0"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Functions runtime initialized. {\"cwd\":\"D:\\\\source\\\\amazon-clone\\\\functions\",\"node_version\":\"15.8.0\"}"}}
+[debug] [2021-03-29T09:23:32.186Z] [runtime-status] [16748] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Disabled runtime features: undefined"}}
+[debug] [2021-03-29T09:23:32.190Z] [runtime-status] [16748] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.5.0\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2021-03-29T09:23:32.192Z] [runtime-status] [16748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.2\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-03-29T09:23:32.195Z] [runtime-status] [16748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.2\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-03-29T09:23:32.199Z] [runtime-status] [16748] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-03-29T09:23:32.201Z] [runtime-status] [16748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.2\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-03-29T09:23:32.280Z] [runtime-status] [16748] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-03-29T09:23:32.280Z] [runtime-status] [16748] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.2","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.13.2\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2021-03-29T09:23:32.281Z] [runtime-status] [16748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.2\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-03-29T09:23:32.283Z] [runtime-status] [16748] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.5.0\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2021-03-29T09:23:32.284Z] [runtime-status] [16748] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.2\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2021-03-29T09:23:32.284Z] [runtime-status] [16748] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.5.0","resolution":"D:\\source\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [16748] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.5.0\",\"resolution\":\"D:\\\\source\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ localhost:8080 │ http://localhost:4000/firestore │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Database  │ localhost:9000 │ http://localhost:4000/database  │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-03-29T09:23:32.298Z] [worker-~diagnostic~-1f726c3e-195e-4496-ac3d-6d1512372461]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-1f726c3e-195e-4496-ac3d-6d1512372461]: IDLE"}}
+[debug] [2021-03-29T09:25:03.527Z] Mar 29, 2021 2:55:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 29, 2021 2:55:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-03-29T09:25:03.764Z] Mar 29, 2021 2:55:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 29, 2021 2:55:03 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected HTTP/2 connection.\r\n"}}
+[debug] [2021-03-29T09:30:18.443Z] Mar 29, 2021 3:00:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Mar 29, 2021 3:00:18 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\r\nINFO: Detected non-HTTP/2 connection.\r\n"}}
+[debug] [2021-03-29T09:48:26.240Z] ----------------------------------------------------------------------
+[debug] [2021-03-29T09:48:26.242Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\A\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-03-29T09:48:26.242Z] CLI Version:   9.7.0
+[debug] [2021-03-29T09:48:26.242Z] Platform:      win32
+[debug] [2021-03-29T09:48:26.242Z] Node Version:  v15.8.0
+[debug] [2021-03-29T09:48:26.243Z] Time:          Mon Mar 29 2021 15:18:26 GMT+0530 (India Standard Time)
+[debug] [2021-03-29T09:48:26.243Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-03-29T09:48:26.248Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-29T09:48:26.249Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\source\Amazonweb-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using e-clone-21b4c. 
+[debug] [2021-03-29T09:48:36.838Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c [none]
+[debug] [2021-03-29T09:48:37.809Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c 200
+[debug] [2021-03-29T09:48:37.809Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-21b4c {"projectId":"e-clone-21b4c","projectNumber":"691046362256","displayName":"Amazone-clone","name":"projects/e-clone-21b4c","resources":{"hostingSite":"e-clone-21b4c","realtimeDatabaseInstance":"e-clone-21b4c-default-rtdb","storageBucket":"e-clone-21b4c.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-03-29T09:50:59.866Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-03-29T09:51:00.244Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-03-29T09:51:00.245Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.3.1","browserURL":"https://www.gstatic.com/firebasejs/8.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.3.1/firebase.tgz"},"live":{"version":"8.3","browserURL":"https://www.gstatic.com/firebasejs/live/8.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.3.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.3.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.3.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.3.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at D:\source\Amazonweb-clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=952687185&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-03-29T09:51:07.286Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"c17da541988a4b7bb751","redirect_uri":"http://localhost:9005","state":"952687185"}
+[debug] [2021-03-29T09:51:07.755Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Mon, 29 Mar 2021 09:51:07 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"f7de5fb6488f93a1d3b6c5a4113f19ab\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-6832eced.js gist.github.com/socket-worker-6832eced.js","x-github-request-id":"D855:6A88:6535:7BE5:6061A30B"}
+[debug] [2021-03-29T09:51:07.767Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-03-29T09:51:08.248Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-03-29T09:51:08.249Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"shoebahmedkhan","id":38142945,"node_id":"MDQ6VXNlcjM4MTQyOTQ1","avatar_url":"https://avatars.githubusercontent.com/u/38142945?v=4","gravatar_id":"","url":"https://api.github.com/users/shoebahmedkhan","html_url":"https://github.com/shoebahmedkhan","followers_url":"https://api.github.com/users/shoebahmedkhan/followers","following_url":"https://api.github.com/users/shoebahmedkhan/following{/other_user}","gists_url":"https://api.github.com/users/shoebahmedkhan/gists{/gist_id}","starred_url":"https://api.github.com/users/shoebahmedkhan/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/shoebahmedkhan/subscriptions","organizations_url":"https://api.github.com/users/shoebahmedkhan/orgs","repos_url":"https://api.github.com/users/shoebahmedkhan/repos","events_url":"https://api.github.com/users/shoebahmedkhan/events{/privacy}","received_events_url":"https://api.github.com/users/shoebahmedkhan/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2018-04-06T19:49:31Z","updated_at":"2021-03-29T09:13:17Z","private_gists":0,"total_private_repos":6,"owned_private_repos":6,"disk_usage":15438,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as shoebahmedkhan 
+[info] 
+[debug] [2021-03-29T09:51:18.151Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-03-29T09:51:19.135Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-03-29T09:51:19.136Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-03-29T09:51:28.771Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-03-29T09:51:29.251Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-03-29T09:51:29.252Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
